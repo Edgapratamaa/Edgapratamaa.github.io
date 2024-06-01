@@ -44,8 +44,11 @@
             </ul>
         </div>
         <div class="nav-button">
-            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            <a href="assets/CV/CV_Edga Sukma Pratama.pdf" download="CV_Edga sukma Pratama.pdf">
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </a>
         </div>
+        
         <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
@@ -69,8 +72,11 @@
             </div>
             <div class="featured-text-btn">
                 <button class="btn blue-btn">Hire Me</button>
-                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                <a href="assets/CV/CV_Edga Sukma Pratama.pdf" target="_blank">
+                    <button class="btn">View CV <i class="uil uil-file-alt"></i></button>
+                </a>
             </div>
+            
             <div class="social_icons">
                 <div class="icon"><i class="uil uil-instagram"></i></div>
                 <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
@@ -103,8 +109,17 @@
                     <p>I am a 4th-semester Informatics Engineering student at Nusantara University PGRI Kediri. I specialize in IoT and Python programming, aiming to develop efficient IoT solutions. I have experience in MySQL database management, microcontroller programming, front-end web development (HTML, CSS), and data analytics. I actively participate in competitions and training, work well in teams, and am eager to learn and contribute to projects.
                     </p>
                     <div class="about-btn">
-                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                        <button class="btn" id="download-cv-btn">Download CV <i class="uil uil-import"></i></button>
                     </div>
+                    <script>
+                        document.getElementById('download-cv-btn').addEventListener('click', function() {
+                            const link = document.createElement('a');
+                            link.href = 'assets/CV/CV_Edga Sukma Pratama.pdf';
+                            link.download = 'CV_Edga Sukma Pratama.pdf';
+                            link.click();
+                        });
+                    </script>
+                    
                 </div>
             </div>
             <div class="col">
